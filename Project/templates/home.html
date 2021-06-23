@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> boy scout survival guide </title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Reenie Beanie', 'sans-serif';
+            display: grid;
+            grid-template-columns: 10% 90%;
+            grid-template-areas: 'black color';
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .header {
+            text-align: center;
+            margin-top: 1em;
+            font-size: 2em;
+            grid-area: 'color';
+            background-color: white;
+            text-decoration-line: underline;
+        }
+
+        .welcome-text {
+            text-align: center;
+            font-size: 1.9em;
+            font-weight: 700;
+            margin-top: 3em;
+            grid-area: 'color';
+            display: grid;
+            grid-template-areas: 'explore learn';
+        }
+        h2 span {
+            display: block;
+        }
+
+        .btn {
+            margin-top: 5em;
+            border-radius: 100px 0 0 100px;
+            font-size: 1.5em;
+            font-family: 'Reenie Beanie', 'sans-serif';
+            font-weight: 900;
+            background-color: black;
+            color: white;
+            border: none;
+            width: 12%;
+            padding: 0.5em;
+            cursor: pointer;
+            grid-area: 'color';
+            box-shadow: -5px 5px 10px rgb(16, 59, 77);
+
+        }
+        .btn:hover {
+            font-weight: 100;
+            box-shadow: none;
+        }
+
+        .grid-left {
+            grid-area: 'black';
+        }
+        .grid-right {
+            grid-area: 'color';
+            background-color: rgb(45, 155, 199);
+        }
+        .left {
+            grid-area: 'explore';
+        }
+        .right {
+            grid-area: 'learn';
+        }
+
+        .right-align {
+            text-align: right;
+        }
+        .center-align {
+            text-align: center;
+        }
+
+        .blackpart {
+            background-color: rgba(0, 0, 0, 0.849);
+            height: 1500px;
+        }
+
+        .container {
+            background: white;
+            border: 8px solid black;
+            border-radius: 8px;
+            margin: 7em auto auto;
+            padding: 5em;
+            width: 20%;
+            height: 20px;
+        }
+
+        .container span {
+            display: block;
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 0.1em;
+            text-align: left;
+        }
+
+        .container p {
+            margin: -4em auto auto auto;
+        }
+        .container hr {
+            border: 2px solid black;
+            margin: auto auto auto;
+        }
+
+    </style>
+
+</head>
+
+<body>
+        <div class='grid-left'>
+            <div class='blackpart'>
+            </div>
+        </div>
+
+        <div class='grid-right'>
+            <div class='header'>
+                <h1> boy scout survival guide </h1>
+            </div>
+
+            <div class='container'>
+                <p>
+                <span> Fugo Pannacotta <hr></span>
+                <span> Mista Guido <hr></span>
+                <span> Narancia Ghirga <hr></span>
+                </p>
+            </div>
+
+            <form action='#'>
+                <div class='right-align'>
+                    <button type='submit' class='btn'> Try me out! </button>
+                </div>
+            </form>
+        </div>
+    
+</body>
+
+</html>
